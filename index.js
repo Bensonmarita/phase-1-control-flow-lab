@@ -1,11 +1,33 @@
-function scuberGreetingForFeet(){
+function scuberGreetingForFeet(feet){
   // Write your code here!
-}
+   if (feet <=400) {
+    return "This one is on me!";
+   } 
 
-function ternaryCheckCity(){
-  // Write your code here!
-}
+   else if (feet>2000   && feet<2500) {
+    return "I will gladly take your thirty bucks.";
+   }
+   else
+   return "No can do."
+  }
 
-function switchOnCharmFromTip(){
+    
+function ternaryCheckCity(city){
   // Write your code here!
+  return city === 'NYC'? 'Ok, sounds good.' : "No go."
+
+}
+function switchOnCharmFromTip(generous){
+  // Write your code here!
+  switchOnCharmFromTip = generous;
+  switch (switchOnCharmFromTip){
+    case "generous":
+      return('Thank you so much.');
+      break
+      case "not as generous":
+        return('Thank you.');
+        break
+        default:
+          return('Bye.')
+  }
 }
